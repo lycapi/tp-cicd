@@ -14,7 +14,7 @@ def client():
 
 def test_get_all_students(client):
     res = client.get('/students')
-    assert res.status_code == 500
+    assert res.status_code == 200
     assert len(res.get_json()) == 5
 
 
